@@ -1,6 +1,8 @@
 # Pwgenerator
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.0.
+This is a project to practise event binding, property binding, two-way binding and string interpolation amongst other things.
+
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.0. 
 
 ## Development server
 
