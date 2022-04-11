@@ -1,19 +1,32 @@
-<div class="container-fluid w-25">
+<div class="container w-25">
   <div class="row justify-content-center">
-    <h1>Password Generator</h1>
-    <div class="col-xs-12">
-      <div>
-        <label>Enter Length</label>
-        <input type="number" name="">
+
+    <div class="row">
+      <h1>Password Generator</h1>
+      <div class="col-xs-12 mb-1">
+        <label class="col-3">Enter Length</label>
+        <input [(ngModel)]="passwordLength" type="number" class="col-8">
       </div>
-      <div>
-        <label>Enter Length</label>
-        <input type="number" name="" >
+      <div class="col-xs-12 mb-1">
+        <input (change)="includeLetters = !includeLetters;" style="margin-right: 1rem;" type="checkbox">
+        <label>Use Letters</label>
       </div>
-      <div>
-        <label>Enter Length</label>
-        <input type="number" name="">
+      <div class="col-xs-12 mb-1">
+        <input (change)="includeNumbers = !includeNumbers;" style="margin-right: 1rem;" type="checkbox">
+        <label>Use Numbers</label>
       </div>
+      <div class="col-xs-12 mb-1">
+        <input (change)="includeSymbols = !includeSymbols;" style="margin-right: 1rem;" type="checkbox">
+        <label>Use Symbols</label>
+      </div>
+      <div class="col-xs-12 mb-1">
+        <button (click)="onButtonClick()" class="btn btn-success col-11">Generate!</button>
+      </div>
+      <div class="col-xs-12 mb-1">
+        <input class="col-11" [value]="password" type="text" name="" id="">
+      </div>
+
     </div>
+
   </div>
 </div>
